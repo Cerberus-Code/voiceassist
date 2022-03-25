@@ -1,5 +1,5 @@
 import pyttsx3
-import speechrecognition as sr
+import speech_recognition as sr
 # Importing required modules
 
 class AI():
@@ -20,20 +20,20 @@ class AI():
         self.m = sr.Microphone()
         # Define the microphone for Speech Recognition
 
-"""     for voice in voices:
-            print(voice, voice.id, voice.name)
-"""
+        # for voice in voices:
+        #     print(voice, voice.id, voice.name)
+
 
         if name is not None:
-            self.__name = name:
+            self.__name = name
         # Ensures name definition
 
-        print("I'm listening.")
+        # print("I'm listening.")
 
-        with self.m as source:
-        # Define microphone as audio source
-            self.r.adjust_for_ambient_noise(source)
-            # Adjust microphone audio for ambient noise
+        # with self.m as source:
+        # # Define microphone as audio source
+        #     self.r.adjust_for_ambient_noise(source)
+        #     # Adjust microphone audio for ambient noise
 
     @property
     def name(self):
@@ -41,6 +41,8 @@ class AI():
     
     @name.setter
     def name(self, value):
+        print("My name is {self.__name}")
+
         self.__name = value
     # Name setter
 
